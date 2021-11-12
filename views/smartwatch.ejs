@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('head') -%>
+  </head>
+<body>
+  <%- include('header') -%>
+  <div class="products">
+    <h1 class="products__title">Category</h1>
+    <div class="products__container">
+      <ul class="products__container__list">
+        <li class="products__container__list__item">
+          <a href="/processors">
+            <picture>
+              <source srcset="https://ik.imagekit.io/5avkb7ypb9z/tr:w-300/webp/realme-watch-s_iFSwaVqj3.webp" type="image/webp">
+              <source srcset="https://ik.imagekit.io/5avkb7ypb9z/tr:w-300/jpg/realme-watch-s_nvb2QYQcB.jpg" type="image/jpeg">
+              <img src="https://ik.imagekit.io/5avkb7ypb9z/tr:w-300/jpg/realme-watch-s_nvb2QYQcB.jpg" alt="Ryzen 9 5950X">
+            </picture>
+            <div class="container__title">
+              <h2 class="container__title__item">Realme Watch S</h2>
+              <span class="count">99.99$</span>
+            </div>
+          </a>
+        </li>
+        <li class="products__container__list__item">
+          <a href="/processors">
+            <picture>
+              <source srcset="https://ik.imagekit.io/5avkb7ypb9z/tr:w-300/webp/apple-watch-series3_n_wVOQpL4.webp" type="image/webp">
+              <source srcset="https://ik.imagekit.io/5avkb7ypb9z/tr:w-300/jpg/apple-watch-series3_HUm4pZMOs.jpg" type="image/jpeg">
+              <img src="https://ik.imagekit.io/5avkb7ypb9z/tr:w-300/jpg/apple-watch-series3_HUm4pZMOs.jpg alt="Ryzen 9 5950X">
+            </picture>
+            <div class="container__title">
+              <h2 class="container__title__item">Apple Watch Series 3</h2>
+              <span class="count">199.99$</span>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <%- include('footer') -%>
+  </body>
+</html>

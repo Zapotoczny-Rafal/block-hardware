@@ -1,0 +1,38 @@
+.open {
+  animation: menu-open 0.6s ease-in-out;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+.show {
+  animation: palette-show 1s ease-in-out;
+}
+
+.palette-hide {
+  animation: palette-hide 1s ease-in-out;
+}
+
+.translateX {
+  transform: translate(200px);
+  animation: menu-translate-200 0.3s ease-in-out;
+}
+
+.translateX-negative {
+  transform: translate(-200px);
+  transition: 0.3s ease-in-out;
+}
+
+.footer-relative {
+  position: relative;
+  bottom: 0px;
+}
+
+.inlined {
+  display: inline-block !important;
+
+  button + button {
+    margin-left: 5px;
+  }
+}

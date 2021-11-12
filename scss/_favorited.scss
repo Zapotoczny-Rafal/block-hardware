@@ -1,0 +1,13 @@
+table.favorite {
+  margin-bottom: 20px;
+  font-size: size(medium);
+
+  .product__form__bookmark i ion-icon {
+    font-size: size(largest);
+    cursor: pointer;
+  }
+}
+
+.favorited__container {
+  min-height: 775px;
+}

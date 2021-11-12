@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('head') -%>
+  </head>
+<body>
+  <%- include('header') -%>
+  <div class="cart__container">
+    <h1 class="cart__container__title">Cart</h1>
+    <div class="product">
+      <table>
+        <thead>
+          <tr class="product__form__xl">
+            <th class="product__form__thumbnail"></th>
+            <th class="product__form__name">Name:</th>
+            <th class="product__form__price">Price:</th>
+            <th class="product__form__quantity">Quantity:</th>
+            <th class="product__form__subtotal">Subtotal:</th>
+            <th class="product__form__clear"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="product__form">
+            <td class="product__form__thumbnail title-td" data-item="Thumbnail">
+              <a href="/gigabyte-b450-auros-elite">
+                <picture>
+                  <source srcset="https://ik.imagekit.io/5avkb7ypb9z/tr:w-200/webp/b450-aorus-elite_f1_c9GzWuW.webp?updatedAt=1636302560229" type="image/webp">
+                  <source srcset="https://ik.imagekit.io/5avkb7ypb9z/tr:w-200/jpg/b450-aorus-elite_mB4KCWBji.jpg?updatedAt=1636302527664" type="image/jpeg">
+                  <img src="https://ik.imagekit.io/5avkb7ypb9z/tr:w-200/jpg/b450-aorus-elite_mB4KCWBji.jpg?updatedAt=1636302527664">
+                </picture>
+              </a>
+            </td>
+            <td class="product__form__name title-td" data-item="Name">
+              <a href="#">GIGABYTE B450 AUROS ELITE</a>
+            </td>
+            <td class="product__form__price title-td" data-item="Price">
+              <span class="price">99.99$</span>
+            </td>
+            <td class="product__form__quantity title-td" data-item="Quantity">
+              <div class="product__form__quantity__container">
+                <label>
+                  <input type="number" class="quantity" max="10" min="0" value="1">
+                </label>
+              </div>
+            </td>
+            <td class="product__form__subtotal title-td" data-item="Subtotal">
+              <span class="subtotal">99.99$</span>
+            </td>
+            <td class="product__form__clear">
+              <button class="btn__remove">
+                <i class="close">
+                  <ion-icon name="close-outline"></ion-icon>
+                </i>
+              </button>
+            </td>
+          </tr>
+          <tr class="product__update">
+            <td colspan="6" class="actions">
+              <div class="coupon">
+                <input type="text" placeholder="Coupon code" class="coupon__code">
+                <button class="coupon__btn btn__custom__white">Apply your coupon</button>
+              </div>
+              <button class="actions__btn btn__custom__white">Update your cart</button>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+    </div>
+    <h2 class="cart__title">Cart Summary</h2>
+    <div class="summary">
+       <table>
+       <tbody>
+         <tr>
+           <td data-item="Subtotal">99.99$</td>
+         </tr>
+         <tr>
+           <td data-item="Shipment">
+             <ul class="summary__shipment">
+               <li>
+                 <label>
+                   <input type="radio" class="shipment__method">Pickup in person
+                 </label>
+               <li>
+               <li>
+                 <label>
+                   <input type="radio" class="shipment__method" checked>UPS courier - delivery to the address indicated in the order: 5.00$
+                 </label>
+               </li>
+             </ul>
+             <p>The shipping methods will be updated when you place the order.</p>
+           </td>
+         </tr>
+         <tr>
+           <td data-item="Total">104.99$</td>
+         </tr>
+       </tbody>
+       </table>
+    </div>
+    <button class="submit__btn btn__custom__white">Go to payment</button>
+  </div>
+  <%- include('footer') -%>
+  </body>
+</html>

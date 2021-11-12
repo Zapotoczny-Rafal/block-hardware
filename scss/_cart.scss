@@ -1,0 +1,99 @@
+.cart__container {
+  min-height: 775px;
+}
+
+.product {
+  width: 100%;
+
+  &__form {
+    td {
+      min-height: 10px;
+      display: block;
+      text-align: right;
+      border-bottom: 1px solid hsla(0, 0%, 0%, 20%);
+      padding: 4px;
+
+      img {
+        width: 100px;
+        height: 100px;
+      }
+
+      &:before {
+        float: left;
+      }
+      .quantity {
+        padding: 10px 5px;
+        text-align: center;
+      }
+
+      .btn__remove {
+        width: 100%;
+        font-size: size(large);
+    }
+  }
+}
+
+  &__update {
+    width: 100%;
+
+    .actions {
+      padding: 10px;
+
+      &__btn {
+        width: 100%;
+
+      }
+
+      .coupon {
+        @include flexSpace(space-between);
+        margin-bottom: 20px;
+
+        &__code {
+          font-size: size(medium);
+          width: 120px;
+          height: 40px;
+          margin-right: 2%;
+        }
+      }
+    }
+  }
+}
+
+.summary {
+  width: 100%;
+
+  td {
+    display: block;
+    text-align: right;
+    border-bottom: 1px solid hsla(0, 0%, 0%, 20%);
+    padding: 10px;
+
+    &:nth-child(3) {
+      border-bottom: 0px;
+    }
+
+    &:before {
+      float: left;
+      content: attr(data-item) ": ";
+    }
+
+    p {
+      text-align: left;
+      margin: 10px 0 0;
+    }
+  }
+
+  &__shipment {
+    padding-inline-start: 0px;
+    margin-block-start: 2em;
+
+    li {
+      text-align: left;
+    }
+  }
+}
+
+.submit__btn {
+  margin:30px 2%;
+  width: 96%;
+}

@@ -1,0 +1,109 @@
+.item {
+  width: 96%;
+  min-height: 700px;
+
+  &__section {
+    @include flexCenter(column);
+    margin: 2% 5px 10px 2%;
+  }
+
+  &__summary {
+    @include flexSpace(space-between);
+
+    &__images {
+      @include flexCenter(column);
+      padding: 10px;
+
+      .big {
+        padding: 5px;
+      }
+
+      .column {
+        @include flexCenter(row);
+        padding: 5px;
+
+        &__item {
+          border: 1px solid var(--clr-black);
+          border-radius: 10px;
+          padding: 5px;
+          cursor: pointer;
+
+          &:hover {
+            border-color: var(--clr-green);
+          }
+        }
+
+        div + div {
+          margin-left: 2%;
+        }
+      }
+    }
+    &__status {
+      height: 350px;
+      width: 350px;
+      @include flexCenter(row);
+      margin-left: 5%;
+
+      &__column {
+        @include flexCenter(column);
+        width: 100%;
+        margin-bottom: 30%;
+        font-size: size(large);
+
+        span {
+          color: var(--clr-green);
+          margin-bottom: 10px;
+
+          &:before {
+            content: attr(data-item) ": ";
+            color: initial;
+          }
+        }
+      }
+
+      &__btn {
+        width: 200px;
+        }
+    }
+  }
+
+  &__specs {
+    @include flexCenter(column);
+    width: 65%;
+    margin: 2% 5px 10px 2%;
+
+    &__description {
+      width: 100%;
+    }
+
+    &__odd {
+      background: hsla(0, 0%, 0%, 0.1);
+    }
+
+    &__even {
+      background: hsl(179.2, 100%, 43%);
+    }
+
+    &__odd, &__even {
+      width: 100%;
+      @include flexSpace(space-between);
+      padding: 5px;
+
+      .title {
+        font-weight: weight(bold)
+      }
+
+      .value {
+        @include flexCenter(column);
+        margin-bottom: 2px;
+      }
+    }
+
+    &__column {
+      min-width: 270px;
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+    }
+  }
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('head') -%>
+  </head>
+<body>
+  <%- include('header') -%>
+  <section class="ask">
+    <span class="page-status" style="color:var(--clr-green);"></span>
+    <h1 class="ask__title">Write to us</h1>
+    <div class="ask__contact">
+      <div class="ask__contact__phone">
+        <a href="tel:363880000" class="phone__link">
+          <div class="icon">
+            <i class="phone__icon">
+              <ion-icon name="call-outline"></ion-icon>
+            </i>
+          </div>
+        </a>
+        <div class="content">33 388 00 00</div>
+      </div>
+      <div class="ask__contact__mail">
+        <a href="mailto:bh@bh.com" class="mail__link">
+          <i class="mail__icon">
+            <ion-icon name="mail-outline"></ion-icon>
+          </i>
+        </a>
+        <div class="content">bh@bh.com</div>
+      </div>
+    </div>
+    <div class="ask__address"><b>Block Hardware</b> ul.Polna 205,41-214 Sosnowiec, Polska</div>
+  </section>
+  <div role="form" class="form">
+    <div class="container-fluid">
+      <form action="" method="POST" class="form__sheet">
+        <p>
+          <label for="name">First and last name
+            <span class="form__span">
+              <input type="text" name="name" placeholder="First and last name" class="form__input" aria-required="true" aria-invalid="false">
+            </span>
+          </label>
+        </p>
+        <p>
+          <label for="email">Email
+            <span class="form__span">
+              <input type="email" name="email" placeholder="Email" class="form__input" aria-required="true" aria-invalid="false">
+            </span>
+          </label>
+        </p>
+        <p>
+          <label for="subject">Subject
+            <span class="form__span">
+              <input type="text" name="subject" placeholder="Subject" class="form__input" aria-required="true" aria-invalid="false">
+            </span>
+          </label>
+        </p>
+        <p>
+          <label for="message">Content message
+            <span class="form__span">
+              <textarea type="text" name="content" placeholder="Content message" class="form__input" aria-required="true" aria-invalid="false"></textarea>
+            </span>
+          </label>
+        </p>
+        <p>
+          <button type="submit" class="btn__custom__white" name="button">Send Message</button>
+        </p>
+      </form>
+    </div>
+  </div>
+  <section class="recommend container-fluid">
+    <h1 class="section__title">Created to advise</h1>
+    <div class="palette palette-hide">
+      <div class="palette__icon">
+        <i class="palette__icon__svg">
+          <img src="images/svg/coins.svg" alt="Coins icon">
+        </i>
+        <p>Competitive prices</p>
+      </div>
+      <div class="palette__icon">
+        <i class="palette__icon__svg">
+          <img src="images/svg/cart.svg" alt="Cart icon">
+        </i>
+        <p>Easy and convenient shopping</p>
+      </div>
+      <div class="palette__icon">
+        <i class="palette__icon__svg">
+          <img src="images/svg/service.svg" alt="Service icon">
+        </i>
+        <p>Nice service</p>
+      </div>
+      <div class="palette__icon">
+        <i class="palette__icon__svg">
+          <img src="images/svg/truck.svg" alt="Truck icon">
+        </i>
+        <p>Fast delivery in many options</p>
+      </div>
+  </section>
+  <%- include('footer') -%>
+  <script src="javascript/scrollable.js"></script>
+  </body>
+</html>

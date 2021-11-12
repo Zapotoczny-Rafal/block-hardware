@@ -1,0 +1,59 @@
+@keyframes menu-open {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(720deg);
+  }
+}
+
+@keyframes menu-translate-200 {
+  from {
+    transform: translate(0px);
+  }
+
+  to {
+    transform: translate(200px);
+  }
+}
+
+@keyframes menu-translate-170 {
+  from {
+    transform: translate(0px);
+  }
+
+  to {
+    transform: translate(170px);
+  }
+}
+
+@keyframes menu-translate-140 {
+  from {
+    transform: translate(0px);
+  }
+
+  to {
+    transform: translate(140px);
+  }
+}
+
+@keyframes palette-show {
+  from {
+    opacity: 0.5;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes palette-hide {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0.5;
+  }
+}

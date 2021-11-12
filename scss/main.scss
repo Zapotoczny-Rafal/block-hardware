@@ -1,0 +1,43 @@
+@import './variables.scss', './config.scss',  './header.scss', './footer.scss', './home.scss','./products.scss', './contact.scss', './cart.scss', './favorited.scss', './item.scss', './index.scss', './responsive.scss', './animations.scss';
+
+.container__custom__white {
+  display: flex;
+  background: var(--clr-white);
+  border-radius: 10px;
+  box-shadow: 5px 5px 0 var(--clr-green);
+  min-height:50px;
+  margin: 5px;
+}
+
+.btn__custom__white {
+  box-shadow: 5px 5px 0 var(--clr-green);
+  padding: 6px 12px;
+  border: 1px solid var(--clr-green);
+  color: var(--clr-black);
+  font-weight: weight(slim);
+  font-size: size(medium);
+
+    &:hover {
+      @include hoverBackground;
+    }
+}
+
+ .btn__basic {
+  border: 1px solid var(--clr-black);
+  padding: 6px 12px;
+  font-weight: 300;
+  font-size: 1.25rem;
+  margin-bottom: 5px;
+
+  &:hover {
+    filter: brightness(300%);
+  }
+}
+
+.container-fluid {
+  @include flexCenter(column);
+  width: 96%;
+  min-height: 20px;
+  border-radius: 10px;
+  box-shadow: 1px 2px 4px 0 var(--clr-black);
+}
